@@ -8,12 +8,12 @@
 <body>
     <form action="julia" method="post">
         <p>Digite seu nome:</p>
-        <input type="text" name="nome" placeholder="Nome completo">
-        <input type="email" name="email" placeholder="E-mail" value="@escola.pr.gov.br">
+        <input type="text" name="nome" placeholder="Nome completo" required>
+        <input type="email" name="email" placeholder="E-mail" value="@escola.pr.gov.br" required>
         <br>
-        <input type="number" name="telefone" placeholder="Telefone">
-        <input type="radio" name="trabalho" value="Sim"> Com certeza
-        <input type="radio" name="trabalho" value="Não"> Sem certeza 
+        <input type="number" name="telefone" placeholder="Telefone"required>
+        <input type="radio" name="trabalho" value="Sim" required> Com certeza
+        <input type="radio" name="trabalho" value="Não" required> Sem certeza 
         <br>
         <input type="checkbox" name="novidade" id="" checked> Aceito receber novidaes da loja
         <br>
@@ -23,9 +23,12 @@
            <option value="1">Espírito Santo</option>
            <option value="1">Bahia</option>
         </select>
-        
-        <br>
 
+        <br>
+        <button type="submit">Enviar</button>
+        <br>
+        <button type="reset">Apagar</button>
+        <br>
         <textarea name="Comentários" id=""></textarea>
     </form>
         
